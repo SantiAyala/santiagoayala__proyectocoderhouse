@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Dancing+Script:wght@700&family=Holtwood+One+SC&family=Lato:wght@400;700;900&family=Luckiest+Guy&family=Montserrat:ital,wght@1,200&family=Open+Sans:wght@500&family=Permanent+Marker&family=Quicksand:wght@500&family=Rubik+Mono+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.grilla {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    
+}
+
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    
+}
+
+
+.header__ul {
+    display: flex;
+    list-style: none;
+    
+    
+    
+}
+
+.header__items {
+    text-decoration: none;
+    font-size: 1.8rem;
+    padding: 0px 30px;
+    color: rgb(72, 161, 235);
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.header__items:hover {
+    font-size: 2.3rem;
+    transition: 1s;
+    color: rgb(161, 72, 245);
+}
+
+.header__logo {
+    text-decoration: none;
+    font-size: 4rem;
+    font-family: 'Dancing Script', cursive;
+    padding: 20px;
+    color: rgb(87, 159, 241);
+
+}
+
+.header__logo:hover {
+    font-size: 4.5rem;
+    transition: 1s;
+    color: rgb(161, 72, 245);
+}
+
+.separador {
+    height: 30px;
+    background-image: linear-gradient(to right, rgb(89, 188, 245), rgb(247, 89, 247) );
+}
+
+.main {
+    display: flex;
+    
+}
+
+.main__divContenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 30px;
+    background-image: url(../imagenes/separador.png);
+    
+}
+
+.main__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.main__divImg {
+    width: 100%;
+    border-radius: 20%;
+    object-fit: cover;
+}
+
+.main__video {
+    height: 100%;
+    width: 100%;
+    padding: 30px;
+}
+
+.main__titulo {
+    font-size: 4rem;
+}
+
+.main__texto {
+    
+    font-size: 2rem;
+}
+.main__parrafo {
+    font-size: 2rem;
+}
+
+.footer__divContenedor {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+    background-image: url(../imagenes/separador.png);
+    
+}
+
+.footer__div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.footer__divImg {
+    width: 100%;
+    
+}
+
+.footer__titulo {
+    font-size: 4rem;
+    
+    
+}
+
+.footer__texto {
+    font-size: 2rem;
+    
+}
+
+.main__divTortas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+
+}
+
+.main__divContenedorTortas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../imagenes/separador.png);
+}
+
+.main__tituloTortas {
+    font-size: 4rem;
+}
+
+.contacto {
+    background-image: url("../imagenes/separador.png");
+    padding: 40px;
+    margin: 40px;
+    
+
+}
+
+.contacto__info {
+    font-size: 3rem;
+}
+
+.btn { 
+    padding: 12px;
+    background-color: rgb(76, 141, 238);
+    border-radius: 20px;
+    margin: 12px;
+    color: #fff;
+
+}
+
+.btn:hover {
+    font-size: 2rem;
+    transition: 1s;
+}
+
+.footer {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grilla__tortas {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+}
+
+.grilla__postres {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+
+
+}
+
+.img__postres { 
+    width: 100%;
+    
+    
+}
+
+.main__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(161, 72, 245)
+    
+}
+
+.main__tituloPostres { 
+    font-size: 4rem;
+}
+
+.main__textoPostres {
+    font-size: 3rem;
+}
+
+.main__article {
+    text-align: center;
+}
+
+.grilla__nosotros {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    
+
+}
+
+.main__divNosotros {
+    display: flex;
+    flex-direction: column;
+}
+
+.img__nosotros {
+    width: 100%;
+}
+
+.grilla__contacto {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+
+
+
+@media screen and (max-width:1024px) {
+
+    .main__divContenedor {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .main__video {
+        width: 50vh;
+        height: 30vh;
+    }
+
+    .footer__divContenedor {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+
+    }
+
+    .main__divContenedorTortas {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        
+        
+
+
+    }
+
+    .main__divTortas {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .header__ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+   
+    
+
+    }
